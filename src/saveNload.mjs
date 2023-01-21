@@ -1,4 +1,4 @@
-import GetValues, { GetReimbursibleValues, GetMeetingValues, GetConsultantValues, GetPhaseValues, GetProjectValues } from "./src/js/values.mjs";
+import GetValues, { GetReimbursibleValues, GetMeetingValues, GetConsultantValues, GetPhaseValues, GetProjectValues } from "./js/values.mjs";
 import { fileOpen } from "https://unpkg.com/browser-fs-access";
 import { CalculateAll } from "./script.js";
 

@@ -1,7 +1,7 @@
-import UpdateWDollars, { getRandomInt } from "./src/js/helper.mjs";
-import ShowHideTotalsMenu, { HideSection, ShowAllCosts, ShowHideHelper } from "./src/js/visual.mjs";
-import GetValues, { GetMeetingValues, GetConsultantValues, GetPhaseValues, GetReimbursibleValues, GetProjectValues } from "./src/js/values.mjs";
-import GenerateTestDoc from "./src/js/word.mjs";
+import UpdateWDollars, { getRandomInt } from "./js/helper.mjs";
+import ShowHideTotalsMenu, { HideSection, ShowAllCosts, ShowHideHelper } from "./js/visual.mjs";
+import GetValues, { GetMeetingValues, GetConsultantValues, GetPhaseValues, GetReimbursibleValues, GetProjectValues } from "./js/values.mjs";
+import GenerateTestDoc from "./js/word.mjs";
 
 //Event listeners for buttons
 btnClear.addEventListener("click", Clear);
