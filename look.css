@@ -1,0 +1,336 @@
+body {
+  background: #3e517a;
+  margin: 0;
+}
+
+/*For bidder title*/
+.sysTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  background: #87cefa;
+  width: 40rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 24px;
+  box-shadow: 0px 0px 10px black;
+}
+
+/*For Different sections*/
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  width: 80rem;
+  background: lightgray;
+  height: 85vh;
+  border-radius: 12px;
+}
+
+.left {
+  background: rgb(69, 121, 161);
+  width: 40%;
+  height: 100%;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.outputContainer {
+  background: whitesmoke;
+  width: 40%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.right {
+  background: rgb(69, 121, 161);
+  width: 20%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.infoContainer {
+  position: absolute;
+  right: 3rem;
+  top: 10rem;
+  width: 15rem;
+  text-align: center;
+  background: rgb(69, 121, 161);
+  border-radius: 12px;
+}
+
+.info {
+  padding: 1rem;
+  background-color: white;
+  width: 12rem;
+  margin: 0.5rem auto;
+  border-radius: 12px;
+}
+
+/*Subcontainer within right*/
+.btnContainer {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#archCosts {
+  transition: max-height 0.2s ease-out;
+}
+
+#archCostsHeader:hover,
+#siteVisitsHeader:hover,
+#consultantCostsHeader:hover,
+#reimbursiblesHeader:hover,
+#advancedHeader:hover,
+#projectInfoHeader:hover {
+  background-color: red !important;
+}
+
+.secHeader {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background: lightskyblue;
+  width: 80%;
+  margin: 1rem 10%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.4);
+}
+
+.inpSection {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: lightblue;
+}
+
+#zoomMeetings {
+  margin-bottom: 1rem;
+}
+
+#right button {
+  border-radius: 10px;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: rgb(101, 76, 186);
+  color: white;
+  box-shadow: 5px 5px 15px black;
+  transition: 0.1s;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  margin: 10% 25%;
+  background: yellow;
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.overlay a {
+  display: block;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.overlay a:hover {
+  color: white;
+}
+
+#overlayBtn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#overlayExit:hover {
+  color: white;
+}
+
+.output {
+  margin: 1rem 5rem;
+  text-align: center;
+}
+
+.outputHead {
+  font-weight: bold;
+}
+
+.field {
+  margin: 0 5% 0.1rem;
+  width: 90%;
+  display: flex;
+  justify-content: right;
+  padding: 0.25rem;
+  border-radius: 8px;
+  height: 1.5rem;
+}
+
+.inpheader5 {
+  width: 5%;
+}
+
+.inpheader10 {
+  width: 10%;
+}
+
+.inpheader20 {
+  width: 20%;
+  text-align: center;
+}
+
+.inpheader25 {
+  width: 25%;
+  text-align: center;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.inputLarge {
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.input40 {
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.inputFull {
+  width: 30%;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.inputHalf {
+  width: 15%;
+  border-radius: 8px;
+  border: none;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.inputSmall {
+  width: 12%;
+  border-radius: 8px;
+  border: none;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.hn::-webkit-outer-spin-button,
+.hn::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rightspace {
+  margin-right: 1.5rem;
+}
+
+/*Special css modifiers. */
+.bold {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.insideHeader {
+  height: 1rem;
+  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .sysTitle {
+    width: 30rem;
+  }
+
+  .container {
+    width: 70rem !important;
+  }
+
+  #left {
+    width: 45%;
+  }
+
+  #output {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .sysTitle {
+    width: 30rem;
+  }
+
+  .container {
+    width: 60rem !important;
+  }
+
+  #left {
+    width: 50%;
+  }
+
+  #output {
+    width: 30%;
+  }
+
+  .output {
+    margin: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .sysTitle {
+    width: 20rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 30rem !important;
+  }
+
+  #left {
+    width: 30rem;
+  }
+  #output {
+    width: 30rem;
+    overflow-y: scroll;
+  }
+  #right {
+    height: 10rem;
+    width: 30rem;
+  }
+
+  .btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0rem auto;
+  }
+}

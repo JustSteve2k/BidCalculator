@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bidding Calculator</title>
+    <link rel="stylesheet" href="look.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <a href="#" id="overlayBtn" onclick="CloseOverlay()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="#">IMPORT</a>
+        <a href="#">EXPORT</a>
+      </div>
+    </div>
+
+    <h3 class="sysTitle">Bidding Calcluator</h3>
+    <div id="temp" class="container">
+      <div id="left" class="left">
+        <form action="">
+          <h2 id="archCostsHeader" class="secHeader">Arch Hours / Rate</h2>
+          <div id="archCosts" class="inpSection" style="display: block">
+            <div class="field insideHeader">
+              <div class="inpheader25"></div>
+              <div class="inpheader25"></div>
+              <div class="inpheader25 bold underline">Hours</div>
+              <div class="inpheader25 bold underline">Cost</div>
+            </div>
+            <div class="field">
+              <label for="inpExistingHours">Existing</label>
+              <input type="number" id="inpExistingHours" class="inputHalf" value="0" />
+              <input type="number" id="inpExistingRate" class="inputHalf" value="185" />
+            </div>
+            <div class="field">
+              <label for="inpPrincipalArchitect">Principal Architect</label>
+              <input type="number" id="inpPrincipalArchitect" class="inputHalf" value="0" />
+              <input type="number" id="inpPrincipalArchitectRate" class="inputHalf" value="220" />
+            </div>
+            <div class="field">
+              <label for="inpProjectArchitect">Project Architect</label>
+              <input type="number" id="inpProjectArchitect" class="inputHalf" value="0" />
+              <input type="number" id="inpProjectArchitectRate" class="inputHalf" value="185" />
+            </div>
+            <div class="field">
+              <label for="inpAssociateArchitect">Associate Architect</label>
+              <input type="number" id="inpAssociateArchitect" class="inputHalf" value="0" />
+              <input type="number" id="inpAssociateArchitectRate" class="inputHalf" value="170" />
+            </div>
+            <div class="field">
+              <label for="inpSeniorDesigner">Senior Designer</label>
+              <input type="number" id="inpSeniorDesigner" class="inputHalf" value="0" />
+              <input type="number" id="inpSeniorDesignerRate" class="inputHalf" value="150" />
+            </div>
+            <div class="field">
+              <label for="inpSrProductionStaff">Sr. Production Staff</label>
+              <input type="number" id="inpSrProductionStaff" class="inputHalf" value="0" />
+              <input type="number" id="inpSrProductionStaffRate" class="inputHalf" value="130" />
+            </div>
+            <div class="field">
+              <label for="inpAssociateProdStaff">Associate Prod. Staff</label>
+              <input type="number" id="inpAssociateProdStaff" class="inputHalf" value="0" />
+              <input type="number" id="inpAssociateProdStaffRate" class="inputHalf" value="120" />
+            </div>
+            <div class="field">
+              <label for="inpProjectAdminStaff">Project Admin Staff</label>
+              <input type="number" id="inpProjectAdminStaff" class="inputHalf" value="0" />
+              <input type="number" id="inpProjectAdminStaffRate" class="inputHalf" value="100" />
+            </div>
+          </div>
+
+          <h2 id="siteVisitsHeader" class="secHeader">Onsite / Virtual Meetings</h2>
+          <div id="siteVisits" class="inpSection" style="display: block">
+            <div class="field insideHeader">
+              <div class="inpheader25"></div>
+              <div class="inpheader25"></div>
+              <div class="inpheader25 bold underline">OnSite</div>
+              <div class="inpheader25 bold underline">Virtual</div>
+            </div>
+            <div class="field">
+              <label for="inpSiteVisitsCost">Meeting Cost</label>
+              <input type="number" id="inpSiteVisitsCost" class="inputHalf rightspace" value="500" step="5" />
+              <input type="number" id="inpZoomMeetingsCost" class="inputHalf" value="250" step="5" />
+            </div>
+            <div class="field">
+              <label for="inpProgramming">Programming</label>
+              <input type="number" id="inpProgramming" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpProgrammingZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpPreBid">Pre-bid</label>
+              <input type="number" id="inpPreBid" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpPreBidZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpPreCon">Pre-Con</label>
+              <input type="number" id="inpPreCon" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpPreConZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpCAVisits">CA Visits</label>
+              <input type="number" id="inpCAVisits" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpCAZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpPunchlist">Punchlist</label>
+              <input type="number" id="inpPunchlist" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpPunchlistZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpTDSHS">TDSHS</label>
+              <input type="number" id="inpTDSHS" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpTDSHSZoom" class="inputHalf" value="0" />
+            </div>
+            <div class="field">
+              <label for="inpTAS">TAS</label>
+              <input type="number" id="inpTAS" class="inputHalf rightspace" value="0" />
+              <input type="number" id="inpTASZoom" class="inputHalf" value="0" />
+            </div>
+          </div>
+
+          <h2 id="consultantCostsHeader" class="secHeader">Consultant Costs</h2>
+          <div id="consultantCosts" class="inpSection" style="display: block">
+            <div class="field insideHeader">
+              <div class="inpheader20"></div>
+              <div class="inpheader20 bold underline">Cost</div>
+              <div class="inpheader5"></div>
+              <div class="inpheader5"></div>
+              <div class="inpheader5"></div>
+              <div class="inpheader5"></div>
+              <div class="inpheader20 bold underline">Name</div>
+              <div class="inpheader5"></div>
+            </div>
+            <div class="field">
+              <label for="inpMEPCost">MEP Costs</label>
+              <input type="number" id="inpMEPCost" class="inputHalf rightspace hn" value="0" />
+              <input type="string" id="inpMEPName" class="input40" value="" placeholder="MEP Consultant" />
+            </div>
+            <div class="field">
+              <label for="inpStructCost">Struct Costs</label>
+              <input type="number" id="inpStructCost" class="inputHalf rightspace hn" value="0" />
+              <input type="string" id="inpStructName" class="input40" value="" placeholder="Struct Consultant" />
+            </div>
+            <div class="field">
+              <label for="inpCons1Cost">Consultant 1</label>
+              <input type="number" id="inpCons1Cost" class="inputHalf rightspace hn" value="0" />
+              <input type="string" id="inpCons1Name" class="input40" value="" placeholder="Consultant Name" />
+            </div>
+            <div class="field">
+              <label for="inpCons2Cost">Consultant 2</label>
+              <input type="number" id="inpCons2Cost" class="inputHalf rightspace hn" value="0" />
+              <input type="string" id="inpCons2Name" class="input40" value="" placeholder="Consultant Name" />
+            </div>
+            <div class="field">
+              <label for="inpCons3Cost">Consultant 3</label>
+              <input type="number" id="inpCons3Cost" class="inputHalf rightspace hn" value="0" />
+              <input type="string" id="inpCons3Name" class="input40" value="" placeholder="Consultant Name" />
+            </div>
+          </div>
+
+          <h2 id="reimbursiblesHeader" class="secHeader">Reimbursibles</h2>
+          <div id="reimbursibles" class="inpSection" style="display: block">
+            <div class="field">
+              <label for="reiPlanReview">PlanReview</label>
+              <input type="number" id="reiPlanReview" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiTDSHS">TDSHS</label>
+              <input type="number" id="reiTDSHS" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiTAS">TAS</label>
+              <input type="number" id="reiTAS" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiPrinting">Printing</label>
+              <input type="number" id="reiPrinting" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiMEPReimbursibles">MEP Reimbursibles</label>
+              <input type="number" id="reiMEPReimbursibles" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiMileage">Mileage / Tolls</label>
+              <input type="number" id="reiMileage" class="inputFull hn" value="0" step="50" />
+            </div>
+            <div class="field">
+              <label for="reiRenderings">Renderings</label>
+              <input type="number" id="reiRenderings" class="inputFull hn" value="0" step="50" />
+            </div>
+          </div>
+
+          <h2 id="advancedHeader" class="secHeader">Phase Breakdown</h2>
+          <div id="advanced" class="inpSection" style="display: block">
+            <div class="field">
+              <label for="Programming">Programming</label>
+              <input type="number" id="Programming" class="inputAdv inputSmall" value="5" />
+            </div>
+            <div class="field">
+              <label for="SD">SD</label>
+              <input type="number" id="SD" class="inputAdv inputSmall" value="10" />
+            </div>
+            <div class="field">
+              <label for="DD">DD</label>
+              <input type="number" id="DD" class="inputAdv inputSmall" value="25" />
+            </div>
+            <div class="field">
+              <label for="CD">CD</label>
+              <input type="number" id="CD" class="inputAdv inputSmall" value="40" />
+            </div>
+            <div class="field">
+              <label for="Bid">Bid / Permit</label>
+              <input type="number" id="Bid" class="inputAdv inputSmall" value="5" />
+            </div>
+            <div class="field">
+              <label for="CA">CA</label>
+              <input type="number" id="CA" class="inputAdv inputSmall" value="15" />
+            </div>
+          </div>
+
+          <h2 id="projectInfoHeader" class="secHeader">Project Info</h2>
+          <div id="projectInfo" class="inpSection" style="display: block">
+            <div class="field">
+              <label for="PName">Project Name</label>
+              <input id="PName" class="inputLarge" value="" placeholder="Enter Project Name" />
+            </div>
+            <div class="field">
+              <label for="PAddress">Address</label>
+              <input id="PAddress" class="inputLarge" value="" placeholder="Enter Project Address" />
+            </div>
+            <div class="field">
+              <label for="PNumber">Project Number</label>
+              <input id="PNumber" class="inputLarge" value="" placeholder="Enter Project Number" />
+            </div>
+            <div class="field">
+              <label for="PBidder">Bidder</label>
+              <input id="PBidder" class="inputLarge" value="" placeholder="Who bid this?" />
+            </div>
+            <div class="field">
+              <label for="PDescription">Project Description</label>
+              <textarea name="PDescription" id="PDescription" class="inputLarge" cols="5" rows="3" placeholder="A Brief Description of the project."></textarea>
+            </div>
+          </div>
+        </form>
+        <br />
+      </div>
+
+      <!--  End of Div left -->
+
+      <div id="output" class="outputContainer">
+        <h2 class="secHeader">Output</h2>
+        <p class="output"><span class="outputHead">Total Hours</span><br /><span id="totalHours">0</span></p>
+        <p class="output"><span class="outputHead">Total Site Visits</span><br /><span id="totalSiteVisits">0</span></p>
+        <p class="output"><span class="outputHead">Total Zooms</span><br /><span id="totalZooms">0</span></p>
+        <p class="output"><span class="outputHead">Total ArchCosts</span><br /><span id="totalArchCosts">0</span></p>
+        <p class="output"><span class="outputHead">Total Consultant Costs</span><br /><span id="totalConsultantCosts">0</span></p>
+        <p class="output"><span class="outputHead">Total without Reimbursibles</span><br /><span id="totalWOReimbursibles">0</span></p>
+        <p class="output"><span class="outputHead">Total with Reimbursibles</span><br /><span id="totalWReimbursibles">0</span></p>
+        <p class="output"><span class="outputHead">Average Rate</span><br /><span id="avgRate">0</span></p>
+        <p class="output"><span class="outputHead">Programming Cost</span><br /><span id="costProg">0</span></p>
+        <p class="output"><span class="outputHead">S.D. Cost</span><br /><span id="costSD">0</span></p>
+        <p class="output"><span class="outputHead">D.D. Cost</span><br /><span id="costDD">0</span></p>
+        <p class="output"><span class="outputHead">C.D. Cost</span><br /><span id="costCD">0</span></p>
+        <p class="output"><span class="outputHead">Bid Cost</span><br /><span id="costBid">0</span></p>
+        <p class="output"><span class="outputHead">C.A. Cost</span><br /><span id="costCA">0</span></p>
+      </div>
+
+      <!--  End of Div output section -->
+
+      <div id="right" class="right">
+        <div class="btnContainer">
+          <button id="btnClear">Clear</button>
+          <button id="btnTotalsMenu">ShowhideTotals</button>
+          <button id="btnTestDataS">TestData-S</button>
+          <button id="btnTestDataL">TestData-L</button>
+          <button id="btnShowAllCosts">Collapse / Show Input Headers</button>
+          <button id="btnExport">Export</button>
+          <button id="btnImport">Import</button>
+          <button id="btnHospToOutpatient">Hospital to Outpatient Rates</button>
+          <button id="btnCalculate">Calculate</button>
+          <button id="btnShowHideHelper">Show / Hide Helper</button>
+          <button id="btnAddConsultant">Add Consultant</button>
+          <button id="btnRemoveLastConsultant">Remove Consultant</button>
+          <button id="btnGenerateTestDoc">Test Doc</button>
+        </div>
+      </div>
+    </div>
+
+    <!--  End of Div right -->
+
+    <div id="infoContainer" class="infoContainer" style="display: none">
+      <div class="info">
+        <span id="helper"></span>
+      </div>
+    </div>
+
+    <!--
+    
+    -->
+    <script src="https://unpkg.com/docx@7.4.1/build/index.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.1/FileSaver.js"
+      integrity="sha512-qag94wWFD27E0CbF5yMs9n4xAlgkjEOcYg6d1HlXvGQXFD9GjzWuf1VbKt58bSe3Hcdoo9fbWsF7c6MmQ+vK1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="saveNload.mjs"></script>
+    <script></script>
+  </body>
+</html>
