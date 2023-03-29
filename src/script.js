@@ -14,7 +14,7 @@ btnTestDataL.addEventListener("click", () => {
 });
 btnShowAllCosts.addEventListener("click", ShowAllCosts);
 btnHospToOutpatient.addEventListener("click", HospitalToOutpatientRates);
-btnCalculate.addEventListener("click", CalculateAll);
+// btnCalculate.addEventListener("click", CalculateAll);
 btnShowHideHelper.addEventListener("click", ShowHideHelper);
 
 //Event listeners for hiding headers
@@ -67,9 +67,9 @@ document.getElementById("projectInfoHeader").onmouseover = () => {
   Helper(x);
 };
 
-document.getElementById("btnGenerateTestDoc").addEventListener("click", () => {
-  GenerateTestDoc();
-});
+// document.getElementById("btnGenerateTestDoc").addEventListener("click", () => {
+//   GenerateTestDoc();
+// });
 
 document.getElementById("btnAddConsultant").addEventListener("click", AddNewConsultant);
 document.getElementById("btnRemoveLastConsultant").addEventListener("click", RemoveLastConsultant);
@@ -541,6 +541,7 @@ function AddNewConsultant() {
 
 function RemoveLastConsultant() {
   let section = document.getElementById("consultantCosts");
+
   if (section.childElementCount > 1) section.lastElementChild.outerHTML = "";
   console.log(section.childElementCount);
 }
